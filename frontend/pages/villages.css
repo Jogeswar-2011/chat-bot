@@ -1,0 +1,442 @@
+.villages-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.villages-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.section-label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #258052;
+}
+
+.villages-header h1 {
+    margin-top: 10px;
+    font-size: 45px;
+}
+
+.villages-header p {
+    margin-top: 10px;
+    color: #727c75;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.village-count {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #e5f3e9;
+    border-radius: 50%;
+}
+
+.village-count strong {
+    font-size: 25px;
+    color: #1e7448;
+}
+
+.village-count span {
+    font-size: 12px;
+    color: #657269;
+}
+
+
+/* ADD VILLAGE BUTTON */
+
+.add-village-button {
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #1f7a4d;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.add-village-button:hover {
+    background: #175f3b;
+}
+
+
+/* FORM OVERLAY */
+
+.form-overlay {
+    position: fixed;
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: rgba(15, 30, 20, 0.5);
+}
+
+
+/* FORM */
+
+.village-form-container {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.2);
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 25px;
+}
+
+.form-header h2 {
+    margin-top: 8px;
+    font-size: 28px;
+}
+
+.close-form {
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #f1f4f1;
+
+    cursor: pointer;
+}
+
+.close-form:hover {
+    background: #e5ebe6;
+}
+
+
+/* FORM FIELDS */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #344139;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d8e0da;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    border-color: #43a06b;
+}
+
+
+/* FORM BUTTONS */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.cancel-button {
+    padding: 12px 20px;
+
+    border: 1px solid #dce3dd;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #5d6861;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.save-button {
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #1f7a4d;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background: #175f3b;
+}
+
+
+/* EMPTY STATE */
+
+.empty-state {
+    min-height: 350px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px dashed #cfd9d1;
+
+    border-radius: 18px;
+}
+
+.empty-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.empty-state h2 {
+    font-size: 22px;
+    color: #303b34;
+}
+
+.empty-state p {
+    margin-top: 8px;
+    color: #7a847d;
+}
+
+.empty-add-button {
+    margin-top: 20px;
+
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #1f7a4d;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* VILLAGE CARDS */
+
+.villages-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.village-list-card {
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid #e5eae6;
+
+    border-radius: 18px;
+
+    transition: 0.25s;
+}
+
+.village-list-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(30, 70, 45, 0.1);
+}
+
+.village-card-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.small-village-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #e9f5ec;
+
+    border-radius: 12px;
+
+    font-size: 23px;
+}
+
+.status {
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    background: #e9f6ed;
+
+    color: #23764a;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+.village-list-card h2 {
+    margin-top: 22px;
+
+    font-size: 21px;
+}
+
+.district {
+    margin-top: 12px;
+
+    color: #26794b;
+
+    font-size: 14px;
+}
+
+.description {
+    margin-top: 15px;
+
+    color: #727c75;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.view-button {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #1f7a4d;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .villages-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .villages-page {
+        padding: 40px 15px;
+    }
+
+    .villages-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .header-actions {
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+    .villages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .villages-header h1 {
+        font-size: 35px;
+    }
+
+    .village-count {
+        width: 75px;
+        height: 75px;
+    }
+
+    .village-form-container {
+        padding: 22px;
+    }
+
+}
